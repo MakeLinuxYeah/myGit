@@ -37,7 +37,7 @@ lesson_7:
 	无论工作区是修改还是删除，都可以“一键还原”。
 
 lesson_8:
-	注册gitHub帐号，
+ 1、注册gitHub帐号，
 	创建SSH Key，
 		ssh-keygen -t rsa -C "youremail@example.com"
 	将id_rsa.pub里的内容复制到gitHub中的，“Account settings”，“SSH Keys”页面的“Add SSH Key”中。
@@ -45,7 +45,7 @@ lesson_8:
 	
 	在验证密钥错误时，输入命令：eval "$(ssh-agent -s)"，然后再次验证即可。
 	这里如有报错误：
-	To git@git.oschina.net:yangzhi/hello.git
+	To git@git.oschina.net:path/repo_dir.git
 	 ! [rejected]        master -> master (fetch first)
 	error: failed to push some refs to 'git@git.oschina.net:yangzhi/hello.git'
 	hint: Updates were rejected because the remote contains work that you do
@@ -56,4 +56,6 @@ lesson_8:
 	可以输入：
 		git push -f 
 	可以ok了.
-
+ 2、要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+	关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
