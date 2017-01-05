@@ -35,3 +35,13 @@ lesson_7:
 		场景1：确实要删除，则需要先git rm ，然后再git commit
 		场景2：删除错了，则使用git checkout -- file，其实是用版本库里的版本替换工作区的版本，
 	无论工作区是修改还是删除，都可以“一键还原”。
+
+lesson_8:
+	注册gitHub帐号，
+	创建SSH Key，
+		ssh-keygen -t rsa -C "youremail@example.com"
+	将id_rsa.pub里的内容复制到gitHub中的，“Account settings”，“SSH Keys”页面的“Add SSH Key”中。
+	
+	GitHub允许添加多个Key。且对所有人可见。
+
+
