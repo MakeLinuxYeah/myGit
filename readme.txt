@@ -41,7 +41,19 @@ lesson_8:
 	创建SSH Key，
 		ssh-keygen -t rsa -C "youremail@example.com"
 	将id_rsa.pub里的内容复制到gitHub中的，“Account settings”，“SSH Keys”页面的“Add SSH Key”中。
-	
 	GitHub允许添加多个Key。且对所有人可见。
+	
 	在验证密钥错误时，输入命令：eval "$(ssh-agent -s)"，然后再次验证即可。
+	这里如有报错误：
+	To git@git.oschina.net:yangzhi/hello.git
+	 ! [rejected]        master -> master (fetch first)
+	error: failed to push some refs to 'git@git.oschina.net:yangzhi/hello.git'
+	hint: Updates were rejected because the remote contains work that you do
+	hint: not have locally. This is usually caused by another repository pushin
+	hint: to the same ref. You may want to first merge the remote changes (e.g.
+			hint: 'git pull') before pushing again.
+	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+	可以输入：
+		git push -f 
+	可以ok了.
 
