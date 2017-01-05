@@ -64,3 +64,11 @@ lesson_9:
 	要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
 	git clone git@github.com:MakeLinuxYeah/repo.git
 	Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+lesson_10:
+	分支：创建分支命令：
+			git checkout -b 分支名
+		或	git branch 分支名  ;git checkout 分支名
+
+			
+			
