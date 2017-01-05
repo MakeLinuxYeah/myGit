@@ -43,5 +43,5 @@ lesson_8:
 	将id_rsa.pub里的内容复制到gitHub中的，“Account settings”，“SSH Keys”页面的“Add SSH Key”中。
 	
 	GitHub允许添加多个Key。且对所有人可见。
-
+	在验证密钥错误时，输入命令：eval "$(ssh-agent -s)"，然后再次验证即可。
 
