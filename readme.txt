@@ -79,4 +79,28 @@ lesson_10:
 		合并某分支到当前分支：git merge <name>
 		删除分支：git branch -d <name>
 			
+lesson_11:
+	解决冲突：
+	 1、首先创建新的分支：git checkout -b dev
+		然后修改文件内容：
+		在dev分支上提交：git add file
+						 git commit -m "name"
+     2、切换到master分支：git checkout master
+		然后修改文件内容：
+		在master分支上提交：git add file
+							git commit -m "name2"
+		
+		现在dev分支和master分支都有了各自新的提交，
+		这种情况下，git无法”快速合并“：git merge dev
+	 3、我们可以直接查看文件：
+		<<<<<<< HEAD
+		Creating a new branch is quick & simple.
+		=======
+		Creating a new branch is quick AND simple.
+		>>>>>>> dev
+		Git用<<<<<<<，=======，>>>>>>>标记出不同分支的内容，
+		我们修改如下后保存，再提交。
+		我们可以通过命令：git log --graph 看到分支合并图
+		最后删除分支dev：git branch -d dev
 
+		 
