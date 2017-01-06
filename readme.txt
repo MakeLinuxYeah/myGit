@@ -110,5 +110,13 @@ lesson_12:
 		3、合并分支时，加上--no-ff参数使用普通模式合并，例如：
 			git merge --no-ff -m "merge with no-ff" dev
 
-lesson_13:
-	
+lesson_13:	
+	实际工作修复bug时，创建新的bug分支进行修复，然后合并，最后删除。
+	  1、当手头工作没有完成时，先把工作现场保存一下：gti stash
+		 用git status查看工作区，可以发现是干净的。
+	  2、然后创建分支，修复bug，合并分支，最后删除修复bug分支。
+	  3、继续工作，打开原来的工作现场，
+		 查看：git stash list
+		 恢复：git stash apply恢复，然后git stash drop删除stash
+		 恢复方式2：git stash pop，恢复同时删除
+
