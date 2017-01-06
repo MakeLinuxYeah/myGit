@@ -126,6 +126,9 @@ lesson_14:
 			git branch -D <name>
 
 lesson_15:
+	查看远程库信息，使用git remote -v
+	删除远程库信息，使用git remote remove name
+
 	因此，多人协作的工作模式通常是这样：
       1、首先，可以试图用git push origin branch-name推送自己的修改；
       2、如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
