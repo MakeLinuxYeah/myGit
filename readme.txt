@@ -121,4 +121,6 @@ lesson_13:
 		 恢复方式2：git stash pop，恢复同时删除
 
 lesson_14:
-
+	开发新功能时，最好新建一个分支：
+		如果要丢弃一个没有被合并的分支，使用命令：
+			git branch -D <name>
