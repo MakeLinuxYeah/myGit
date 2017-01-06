@@ -1,5 +1,5 @@
 Git is a version control system.
-Git is free software.
+Git is free software. but private is no free.
 
 lesson_1:
 	初始化一个Git仓库，使用git init命令。
