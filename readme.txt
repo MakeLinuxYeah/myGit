@@ -138,3 +138,10 @@ lesson_15:
 	用命令git branch --set-upstream branch-name origin/branch-name。
 	
       这就是多人协作的工作模式，一旦熟悉了，就非常简单。
+
+lesson_16:
+    命令git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+    git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+    git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
+    命令git tag可以查看所有标签。
+
