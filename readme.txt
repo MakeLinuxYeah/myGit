@@ -104,4 +104,11 @@ lesson_11:
 		最后删除分支dev：git branch -d dev
 
 lesson_12:
+	实际开发中的几个基本原则：
+		1、master分支应该非常稳定，仅用来发布新版本，平时不在上面干活
+		2、干活在dev分支上，发布时再合并到master分支上。
+		3、合并分支时，加上--no-ff参数使用普通模式合并，例如：
+			git merge --no-ff -m "merge with no-ff" dev
 
+lesson_13:
+	
